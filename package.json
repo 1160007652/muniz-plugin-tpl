@@ -1,21 +1,36 @@
 {
-  "name": "root",
-  "private": true,
-  "workspaces": [
-    "packages/@muniz/cli*",
-    "packages/@muniz/muniz-plugin*",
-    "packages/@muniz/ink*",
-    "packages/@muniz/server*"
+  "name": "@muniz/muniz-plugin-tpl",
+  "version": "1.0.0",
+  "description": "muniz脚手架插件事例",
+  "keywords": [
+    "@muniz/muniz-plugin-tpl"
   ],
+  "author": "muniz <1160007652@qq.com>",
+  "homepage": "https://github.com/1160007652/muniz-cli#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "directories": {
+    "dist": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1160007652/muniz-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/1160007652/muniz-cli/issues"
+  },
   "scripts": {
     "dev": "nodemon --exec ./scripts/dev.sh",
     "commit": "git-cz"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-lerna-changelog"
-    }
+  "publishConfig": {
+    "access": "public"
   },
+  "config": {},
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
@@ -30,8 +45,24 @@
       "prettier --write"
     ]
   },
+  "nodemonConfig": {
+    "ignore": [
+      "test/*",
+      "docs/*",
+      "dist/*"
+    ],
+    "watch": [
+      "src/**/*.js"
+    ]
+  },
   "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
     "@babel/plugin-syntax-top-level-await": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "commitizen": "^4.2.1",
@@ -45,32 +76,22 @@
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.0.8",
     "husky": "^4.3.0",
-    "lerna": "^3.22.1",
     "lint-staged": "^10.4.0",
+    "nodemon": "^2.0.4",
     "prettier": "^2.1.2",
-    "prop-types": "^15.7.2",
     "standard": "^14.3.4"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "nodemonConfig": {
-    "ignore": [
-      "test/*",
-      "docs/*",
-      "dist/*"
-    ],
-    "watch": [
-      "**/src/**/*.js"
-    ]
-  },
   "dependencies": {
-    "@babel/cli": "^7.11.6",
-    "@babel/core": "^7.11.6",
-    "@babel/node": "^7.10.5",
-    "@babel/plugin-transform-runtime": "^7.11.5",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/preset-react": "^7.10.4",
-    "nodemon": "^2.0.4"
+    "@hookform/resolvers": "^1.0.0",
+    "prop-types": "^15.7.2",
+    "@muniz/common": "/Users/slashare/NodeProjects/muniz-cli/packages/@muniz/common",
+    "react": "^17.0.1",
+    "react-hook-form": "^6.9.6",
+    "react-intl-universal": "^2.4.1",
+    "react-router": "^5.2.0",
+    "yup": "^0.29.3"
+  },
+  "peerDependencies": {
+    "@muniz/ink-ui": ">=1.0.0"
   }
 }

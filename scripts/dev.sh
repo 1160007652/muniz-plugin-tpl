@@ -4,7 +4,7 @@
 rm -rf ./packages/@muniz/*/dist
 
 # 进行文件打包
-lerna run dev
+babel src --out-dir dist
 
 # 修改 命令行执行权限，【由于 Babel 编译出的文件权限不够】
-chmod +x ./packages/@muniz/cli/dist/bin/cli.js
+# chmod +x ./packages/@muniz/cli/dist/bin/cli.js
