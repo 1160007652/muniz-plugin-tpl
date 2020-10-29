@@ -1,9 +1,7 @@
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { InkUI, React, Ink } from '@muniz/common';
-
-const { TextInput } = InkUI;
-const { useState } = React;
-const { Box, Text, useApp, useFocusManager } = Ink;
+import { TextInput } from '@muniz/ink-ui';
+import { Box, Text, useApp, useFocusManager } from 'ink';
 
 // 插件模版 测试指令
 const Tpl = () => {

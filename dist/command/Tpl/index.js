@@ -2,36 +2,36 @@
 
 var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
 
+var _interopRequireWildcard = require('@babel/runtime/helpers/interopRequireWildcard');
+
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
 exports['default'] = void 0;
 
+var _react = _interopRequireWildcard(require('react'));
+
 var _propTypes = _interopRequireDefault(require('prop-types'));
 
-var _common = require('@muniz/common');
+var _inkUi = require('@muniz/ink-ui');
 
-var TextInput = _common.InkUI.TextInput;
-var useState = _common.React.useState;
-var Box = _common.Ink.Box,
-  Text = _common.Ink.Text,
-  useApp = _common.Ink.useApp,
-  useFocusManager = _common.Ink.useFocusManager; // 插件模版 测试指令
+var _ink = require('ink');
 
+// 插件模版 测试指令
 var Tpl = function Tpl() {
-  return /*#__PURE__*/ _common.React.createElement(
-    Box,
+  return /*#__PURE__*/ _react['default'].createElement(
+    _ink.Box,
     {
       flexDirection: 'column',
     },
-    /*#__PURE__*/ _common.React.createElement(
-      Text,
+    /*#__PURE__*/ _react['default'].createElement(
+      _ink.Text,
       {
         color: 'green',
       },
       'Step-1: \u6536\u96C6\u7528\u6237\u8F93\u5165\u4FE1\u606F',
     ),
-    /*#__PURE__*/ _common.React.createElement(TextInput, {
+    /*#__PURE__*/ _react['default'].createElement(_inkUi.TextInput, {
       placeHolder: '\u6D4B\u8BD5',
     }),
   );

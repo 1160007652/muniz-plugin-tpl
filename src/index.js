@@ -1,3 +1,5 @@
+import { render } from 'ink';
+import React from 'react';
 class Life {
   constructor() {
     // 安装成功后是否立即执行
@@ -17,4 +19,15 @@ class Life {
 
 export default (props) => {
   return new Life();
+};
+
+/**
+ * muniz 脚手架（宿主环境）通过此通道执行插件命令
+ * @param {object} param
+ * @param {string} param.commandPath 执行命令路径
+ * @param {object} param.data 插件命令数据
+ */
+export const pluginCommand = ({ commandPath, data }) => {
+  const _command = require(`./command/${commandPath}`).default;
+  render(React.createElement(_command, data));
 };
