@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 import { TextInput } from '@muniz/ink-ui';
 import { Box, Text, useApp, useFocusManager } from 'ink';
 
-// 插件模版 测试指令
+/**
+ * @muniz
+ * @type react
+ * @description 插件模版 测试指令
+ */
 const Tpl = () => {
   return (
     <Box flexDirection="column">

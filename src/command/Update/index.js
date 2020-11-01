@@ -13,6 +13,7 @@ const Item = ({ label }) => {
 
 /**
  * @muniz
+ * @type function
  * @description 更新模版命令
  */
 const Update = () => {

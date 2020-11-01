@@ -35,6 +35,7 @@ var Item = function Item(_ref) {
 };
 /**
  * @muniz
+ * @type function
  * @description 更新模版命令
  */
 
