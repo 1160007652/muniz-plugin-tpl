@@ -1,0 +1,128 @@
+{
+  "enUS": [
+    {
+      "key": "tpl",
+      "commandType": "react",
+      "description": "Tpl create template",
+      "options": [
+        {
+          "key": "flags",
+          "type": "string",
+          "description": "flags test options",
+          "alias": "",
+          "isRequired": false,
+          "default": "wowowoowqqqqqqq"
+        },
+        { "key": "count", "type": "number", "description": "", "alias": "", "isRequired": false, "default": 1 },
+        {
+          "key": "isGit",
+          "type": "boolean",
+          "description": "生成项目的名称",
+          "alias": "n",
+          "isRequired": false,
+          "default": false
+        }
+      ],
+      "isIndex": false,
+      "name": "Tpl",
+      "path": "Tpl/index.js"
+    },
+    {
+      "key": "update",
+      "commandType": "function",
+      "description": "更新模版命令",
+      "options": [
+        {
+          "key": "inputa",
+          "type": "string",
+          "description": "描述组件",
+          "alias": "i",
+          "isRequired": true,
+          "default": "ssss"
+        },
+        {
+          "key": "flags",
+          "type": "string",
+          "description": "",
+          "alias": "",
+          "isRequired": false,
+          "default": "wowowoowqqqqqqq"
+        },
+        {
+          "key": "isGit",
+          "type": "boolean",
+          "description": "生成项目的名称",
+          "alias": "n",
+          "isRequired": false,
+          "default": false
+        }
+      ],
+      "isIndex": false,
+      "name": "Update",
+      "path": "Update/index.js"
+    }
+  ],
+  "zhCN": [
+    {
+      "key": "tpl",
+      "commandType": "react",
+      "description": "Tpl create template",
+      "options": [
+        {
+          "key": "flags",
+          "type": "string",
+          "description": "flags test options",
+          "alias": "",
+          "isRequired": false,
+          "default": "wowowoowqqqqqqq"
+        },
+        { "key": "count", "type": "number", "description": "", "alias": "", "isRequired": false, "default": 1 },
+        {
+          "key": "isGit",
+          "type": "boolean",
+          "description": "生成项目的名称",
+          "alias": "n",
+          "isRequired": false,
+          "default": false
+        }
+      ],
+      "isIndex": false,
+      "name": "Tpl",
+      "path": "Tpl/index.js"
+    },
+    {
+      "key": "update",
+      "commandType": "function",
+      "description": "更新模版命令",
+      "options": [
+        {
+          "key": "inputa",
+          "type": "string",
+          "description": "描述组件",
+          "alias": "i",
+          "isRequired": true,
+          "default": "ssss"
+        },
+        {
+          "key": "flags",
+          "type": "string",
+          "description": "",
+          "alias": "",
+          "isRequired": false,
+          "default": "wowowoowqqqqqqq"
+        },
+        {
+          "key": "isGit",
+          "type": "boolean",
+          "description": "生成项目的名称",
+          "alias": "n",
+          "isRequired": false,
+          "default": false
+        }
+      ],
+      "isIndex": false,
+      "name": "Update",
+      "path": "Update/index.js"
+    }
+  ]
+}

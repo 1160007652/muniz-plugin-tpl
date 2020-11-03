@@ -5,9 +5,8 @@ import { Box, Text, useApp, useFocusManager } from 'ink';
 
 /**
  * @muniz
- * @type react
- * @description 插件模版 测试指令
- */
+ * @description help_tpl_desc
+ **/
 const Tpl = () => {
   return (
     <Box flexDirection="column">
@@ -20,13 +19,10 @@ const Tpl = () => {
 Tpl.propTypes = {
   /**
    * @muniz
-   * @description falgs哈哈
+   * @description help_tpl_flags_desc
    */
   flags: PropTypes.string,
-  /**
-   * @muniz
-   * @description Number类型转换
-   */
+
   count: PropTypes.number,
   /**
    * @muniz
