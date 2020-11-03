@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 import { TextInput } from '@muniz/ink-ui';
 import { Box, Text, useApp, useFocusManager } from 'ink';
 
-// 插件模版 测试指令
+/**
+ * @muniz
+ * @description help_tpl_desc
+ **/
 const Tpl = () => {
   return (
     <Box flexDirection="column">
@@ -16,13 +19,10 @@ const Tpl = () => {
 Tpl.propTypes = {
   /**
    * @muniz
-   * @description falgs哈哈
+   * @description help_tpl_flags_desc
    */
   flags: PropTypes.string,
-  /**
-   * @muniz
-   * @description Number类型转换
-   */
+
   count: PropTypes.number,
   /**
    * @muniz

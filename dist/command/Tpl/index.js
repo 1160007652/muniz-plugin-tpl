@@ -17,7 +17,10 @@ var _inkUi = require('@muniz/ink-ui');
 
 var _ink = require('ink');
 
-// 插件模版 测试指令
+/**
+ * @muniz
+ * @description help_tpl_desc
+ **/
 var Tpl = function Tpl() {
   return /*#__PURE__*/ _react['default'].createElement(
     _ink.Box,
@@ -40,14 +43,9 @@ var Tpl = function Tpl() {
 Tpl.propTypes = {
   /**
    * @muniz
-   * @description falgs哈哈
+   * @description help_tpl_flags_desc
    */
   flags: _propTypes['default'].string,
-
-  /**
-   * @muniz
-   * @description Number类型转换
-   */
   count: _propTypes['default'].number,
 
   /**
