@@ -13,16 +13,28 @@ var _ink = require('ink');
 
 var _react = _interopRequireDefault(require('react'));
 
+var _i18n = _interopRequireDefault(require('./configs/i18n'));
+
+/**
+ * 请不要修改，本页面的 结构， 否则会导致 插件加载失败
+ */
+// 初始化多语言
+_i18n['default'].initI18n();
+
 var Life = function Life() {
   (0, _classCallCheck2['default'])(this, Life);
-  // 安装成功后是否立即执行
-  this.isStart = true;
-  this.locales = ['zhCN', 'enUS']; // 插件支持的国际化语言
+  this.isStart = true; // 安装成功后是否立即执行
 
-  this.defaultCommand = 'tpl'; // 插件默认执行命令, 以 muniz 插件名 运行时，执行那条命令，无配置 为 cli 打印 help 命令
+  this.defaultCommand = ''; // 插件默认执行命令, 以 muniz 插件名 运行时，执行那条命令，无配置 为 cli 打印 help 命令
 };
 
 var _default = function _default(props) {
+  var locale = props.locale; // 设置多语言
+
+  _i18n['default'].setLocale({
+    locale: locale,
+  });
+
   return new Life();
 };
 /**
@@ -43,7 +55,7 @@ var pluginCommand = function pluginCommand(_ref) {
   var _command = require('./command/'.concat(commandPath))['default'];
 
   if (commandType === 'function') {
-    _command(commandModuleProps);
+    _command(data);
   } else {
     (0, _ink.render)(/*#__PURE__*/ _react['default'].createElement(_command, data));
   }
