@@ -86,6 +86,7 @@
     "@hookform/resolvers": "^1.0.0",
     "@muniz/cli-i18n": "^1.0.18",
     "@muniz/ink-ui": "^1.0.18",
+    "helloworld": "./pkg",
     "ink": "^3.0.8",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",

@@ -7,18 +7,46 @@ Object.defineProperty(exports, '__esModule', {
 });
 exports['default'] = void 0;
 
+var _regenerator = _interopRequireDefault(require('@babel/runtime/regenerator'));
+
+var _asyncToGenerator2 = _interopRequireDefault(require('@babel/runtime/helpers/asyncToGenerator'));
+
 var _propTypes = _interopRequireDefault(require('prop-types'));
 
 var _i18n = _interopRequireDefault(require('../../configs/i18n'));
 
+var wasm = require('helloworld');
 /**
  * @muniz
  * @type function
  * @description help_tpl_wasm_desc
  */
-var TplWasm = function TplWasm() {
-  console.log(_i18n['default'].getLocale('help_tpl_wasm_info'));
-};
+
+var TplWasm = /*#__PURE__*/ (function () {
+  var _ref = (0, _asyncToGenerator2['default'])(
+    /*#__PURE__*/ _regenerator['default'].mark(function _callee() {
+      return _regenerator['default'].wrap(function _callee$(_context) {
+        while (1) {
+          switch ((_context.prev = _context.next)) {
+            case 0:
+              console.log(_i18n['default'].getLocale('help_tpl_wasm_info'), '\n'); // wasm 方法
+
+              console.log('wasm.welcome() -> '.concat(wasm.welcome()));
+              console.log('wasm.add(520, 520) -> '.concat(wasm.add(520, 520)));
+
+            case 3:
+            case 'end':
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }),
+  );
+
+  return function TplWasm() {
+    return _ref.apply(this, arguments);
+  };
+})();
 
 TplWasm.propTypes = {
   /**
