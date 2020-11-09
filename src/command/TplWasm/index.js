@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import i18n from '../../configs/i18n';
-const wasm = require('../../../pkg/helloworld.js');
+const wasm = require('@muniz/helloworld');
 /**
  * @muniz
  * @type function

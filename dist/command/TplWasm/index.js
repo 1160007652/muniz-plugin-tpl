@@ -15,7 +15,7 @@ var _propTypes = _interopRequireDefault(require('prop-types'));
 
 var _i18n = _interopRequireDefault(require('../../configs/i18n'));
 
-var wasm = require('../../../pkg/helloworld.js');
+var wasm = require('@muniz/helloworld');
 /**
  * @muniz
  * @type function
