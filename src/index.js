@@ -11,8 +11,7 @@ i18n.initI18n();
 
 class Life {
   constructor() {
-    this.isStart = true; // 安装成功后是否立即执行
-    this.defaultCommand = ''; // 插件默认执行命令, 以 muniz 插件名 运行时，执行那条命令，无配置 为 cli 打印 help 命令
+    this.isStart = true; // 安装成功后是否立即执行, 目前仅在 Mac 系统下有效
   }
 }
 

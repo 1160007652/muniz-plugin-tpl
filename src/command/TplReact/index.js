@@ -65,8 +65,6 @@ TplReact.propTypes = {
    * @description help_tpl_react_flags_desc
    */
   flags: PropTypes.string,
-
-  count: PropTypes.number,
   /**
    * @muniz
    * @description help_tpl_react_git_desc
@@ -78,7 +76,6 @@ TplReact.propTypes = {
 TplReact.defaultProps = {
   flags: '测试',
   isGit: false,
-  count: 1,
 };
 
 export default TplReact;
