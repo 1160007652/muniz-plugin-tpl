@@ -1,6 +1,6 @@
 {
   "name": "@muniz/muniz-plugin-tpl",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "muniz脚手架插件模版",
   "keywords": [
     "@muniz/muniz-plugin-tpl"
@@ -83,6 +83,7 @@
     "standard": "^14.3.4"
   },
   "dependencies": {
+    "@babel/runtime": "^7.12.5",
     "@muniz/cli-i18n": "^1.0.18",
     "@muniz/helloworld": "^0.1.0",
     "@muniz/ink-ui": "^1.0.18",
