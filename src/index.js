@@ -32,6 +32,7 @@ export default (props) => {
  */
 export const pluginCommand = ({ commandType, commandPath, data }) => {
   const _command = require(`./command/${commandPath}`).default;
+  console.log(commandType);
   if (commandType === 'function') {
     _command(data);
   } else {

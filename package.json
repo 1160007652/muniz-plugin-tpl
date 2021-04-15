@@ -24,8 +24,9 @@
     "url": "https://github.com/1160007652/muniz-cli/issues"
   },
   "scripts": {
-    "dev": "nodemon --exec ./scripts/plugin.sh",
-    "build": "./scripts/plugin.sh",
+    "dev": "babel src --out-dir dist --watch",
+    "generateCommandDesc": "CLI_ENV=production EXTERNAL_PLUGIN_ENV=production muniz --mode=pro --type=desc",
+    "start": "  muniz tpl",
     "commit": "git-cz"
   },
   "publishConfig": {
@@ -83,15 +84,10 @@
     "standard": "^14.3.4"
   },
   "dependencies": {
-    "@hookform/resolvers": "^1.0.0",
     "@muniz/cli-i18n": "^1.0.18",
     "@muniz/ink-ui": "^1.0.18",
     "ink": "^3.0.8",
     "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-hook-form": "^6.9.6",
-    "react-intl-universal": "^2.4.1",
-    "react-router": "^5.2.0",
-    "yup": "^0.29.3"
+    "react": "^17.0.1"
   }
 }

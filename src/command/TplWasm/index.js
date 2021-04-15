@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import i18n from '../../configs/i18n';
+const wasm = require('../../../wasm/tpl_wasm.js');
 
 /**
  * @muniz
  * @type function
  * @description help_tpl_wasm_desc
  */
-const TplWasm = () => {
+const TplWasm = async () => {
   console.log(i18n.getLocale('help_tpl_wasm_info'));
 };
 

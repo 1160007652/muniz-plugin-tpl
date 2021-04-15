@@ -54,6 +54,8 @@ var pluginCommand = function pluginCommand(_ref) {
 
   var _command = require('./command/'.concat(commandPath))['default'];
 
+  console.log(commandType);
+
   if (commandType === 'function') {
     _command(data);
   } else {
