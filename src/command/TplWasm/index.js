@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import i18n from '../../configs/i18n';
-const wasm = require('../../../wasm/tpl_wasm.js');
 
 /**
  * @muniz

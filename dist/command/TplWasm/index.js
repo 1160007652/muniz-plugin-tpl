@@ -15,13 +15,11 @@ var _propTypes = _interopRequireDefault(require('prop-types'));
 
 var _i18n = _interopRequireDefault(require('../../configs/i18n'));
 
-var wasm = require('../../../wasm/tpl_wasm.js');
 /**
  * @muniz
  * @type function
  * @description help_tpl_wasm_desc
  */
-
 var TplWasm = /*#__PURE__*/ (function () {
   var _ref = (0, _asyncToGenerator2['default'])(
     /*#__PURE__*/ _regenerator['default'].mark(function _callee() {

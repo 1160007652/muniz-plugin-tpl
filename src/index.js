@@ -16,9 +16,9 @@ class Life {
   }
 }
 
-export default (props) => {
+export const pluginLife = (props) => {
   const { locale } = props;
-  // 设置多语言
+  // 初始化多语言
   i18n.setLocale({ locale });
   return new Life();
 };

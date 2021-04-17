@@ -5,7 +5,7 @@ var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
-exports.pluginCommand = exports['default'] = void 0;
+exports.pluginCommand = exports.pluginLife = void 0;
 
 var _classCallCheck2 = _interopRequireDefault(require('@babel/runtime/helpers/classCallCheck'));
 
@@ -28,8 +28,8 @@ var Life = function Life() {
   this.defaultCommand = ''; // 插件默认执行命令, 以 muniz 插件名 运行时，执行那条命令，无配置 为 cli 打印 help 命令
 };
 
-var _default = function _default(props) {
-  var locale = props.locale; // 设置多语言
+var pluginLife = function pluginLife(props) {
+  var locale = props.locale; // 初始化多语言
 
   _i18n['default'].setLocale({
     locale: locale,
@@ -45,7 +45,7 @@ var _default = function _default(props) {
  * @param {object} param.data 插件命令数据
  */
 
-exports['default'] = _default;
+exports.pluginLife = pluginLife;
 
 var pluginCommand = function pluginCommand(_ref) {
   var commandType = _ref.commandType,

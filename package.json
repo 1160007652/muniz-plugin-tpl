@@ -25,9 +25,10 @@
   },
   "scripts": {
     "dev": "babel src --out-dir dist --watch",
-    "generateCommandDesc": "CLI_ENV=production EXTERNAL_PLUGIN_ENV=production muniz --mode=pro --type=desc",
-    "start": "  muniz tpl",
-    "commit": "git-cz"
+    "generateCommandDesc": "muniz --mode=pro --type=desc",
+    "start": "EXTERNAL_PLUGIN_ENV=development muniz tpl",
+    "commit": "git-cz",
+    "debug": "babel-node --inspect-brk=9229 EXTERNAL_PLUGIN_ENV=development muniz tpl tplFunction"
   },
   "publishConfig": {
     "access": "public"
