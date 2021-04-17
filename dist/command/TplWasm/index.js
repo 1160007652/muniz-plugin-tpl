@@ -15,11 +15,13 @@ var _propTypes = _interopRequireDefault(require('prop-types'));
 
 var _i18n = _interopRequireDefault(require('../../configs/i18n'));
 
+var wasm = require('@muniz/helloworld');
 /**
  * @muniz
  * @type function
  * @description help_tpl_wasm_desc
  */
+
 var TplWasm = /*#__PURE__*/ (function () {
   var _ref = (0, _asyncToGenerator2['default'])(
     /*#__PURE__*/ _regenerator['default'].mark(function _callee() {
@@ -27,9 +29,12 @@ var TplWasm = /*#__PURE__*/ (function () {
         while (1) {
           switch ((_context.prev = _context.next)) {
             case 0:
-              console.log(_i18n['default'].getLocale('help_tpl_wasm_info'));
+              console.log(_i18n['default'].getLocale('help_tpl_wasm_info'), '\n'); // wasm 方法
 
-            case 1:
+              console.log('wasm.welcome() -> '.concat(wasm.welcome()));
+              console.log('wasm.add(520, 520) -> '.concat(wasm.add(520, 520)));
+
+            case 3:
             case 'end':
               return _context.stop();
           }
