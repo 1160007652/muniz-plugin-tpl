@@ -85,6 +85,7 @@
     "standard": "^14.3.4"
   },
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/runtime": "^7.12.5",
     "@muniz/cli-i18n": "^1.0.18",
     "@muniz/helloworld": "^0.1.0",
@@ -92,5 +93,11 @@
     "ink": "^3.0.8",
     "prop-types": "^15.7.2",
     "react": "^17.0.1"
+  },
+  "munizConfig": {
+    "plugin": {
+      "isStart": true,
+      "autoUpgrade": true
+    }
   }
 }
