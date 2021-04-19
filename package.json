@@ -1,6 +1,6 @@
 {
   "name": "@muniz/muniz-plugin-tpl",
-  "version": "1.0.24",
+  "version": "1.1.1",
   "description": "muniz脚手架插件模版",
   "keywords": [
     "@muniz/muniz-plugin-tpl"
@@ -24,8 +24,10 @@
     "url": "https://github.com/1160007652/muniz-cli/issues"
   },
   "scripts": {
-    "dev": "nodemon --exec ./scripts/plugin.sh",
-    "build": "./scripts/plugin.sh",
+    "start": "EXTERNAL_PLUGIN_ENV=development muniz tpl",
+    "dev": "babel src --out-dir dist --watch",
+    "generateCommandDesc": "muniz --mode=pro --type=desc",
+    "build": "./scripts/build.sh",
     "commit": "git-cz"
   },
   "publishConfig": {
@@ -89,7 +91,6 @@
     "@muniz/ink-ui": "^1.0.18",
     "ink": "^3.0.8",
     "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-hook-form": "^6.9.6"
+    "react": "^17.0.1"
   }
 }

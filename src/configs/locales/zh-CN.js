@@ -1,8 +1,8 @@
 const zhCN = {
-  help_tpl_react_desc: 'Ink React 写命令行，测试',
+  help_tpl_react_desc: '是呢 Ink React 写命令行，测试',
   help_tpl_react_flags_desc: 'flags 测试属性',
   help_tpl_react_git_desc: '逻辑性参数',
-  help_tpl_function_desc: '传统的 Function 写命令行，测试',
+  help_tpl_function_desc: '传统的 Function 写命令行，测试 ',
   help_tpl_wasm_desc: '调用 WebAssembly 库，加密数据',
   help_tpl_wasm_info: '调用Wasm 插件命令 待开发中',
   tpl_react_command_state: 'React Hook 状态',

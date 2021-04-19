@@ -15,9 +15,9 @@ class Life {
   }
 }
 
-export default (props) => {
+export const pluginLife = (props) => {
   const { locale } = props;
-  // 设置多语言
+  // 初始化多语言
   i18n.setLocale({ locale });
   return new Life();
 };
@@ -31,6 +31,7 @@ export default (props) => {
  */
 export const pluginCommand = ({ commandType, commandPath, data }) => {
   const _command = require(`./command/${commandPath}`).default;
+  console.log(commandType);
   if (commandType === 'function') {
     _command(data);
   } else {
